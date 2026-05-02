@@ -9,14 +9,16 @@ export default function Home() {
      
       <section className="mt-6 rounded-3xl bg-gradient-to-r from-orange-500 to-orange-300 text-white px-6 md:px-12 py-14 shadow-lg">
         <div className="max-w-2xl">
-          <div className="animate__animated animate__fadeInDown">
+          <div>
             <p className="text-sm font-medium tracking-wide uppercase mb-2">
-              SunCart AI Picks
+              SunCart Picks
             </p>
-
+            <div className="animate__animated animate__pulse animate__infinite animate__slow">  
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Summer Sale <span className="text-white/90">50% OFF</span>
-            </h1>
+            </h1> 
+            </div>
+            
 
             <p className="mt-4 text-base md:text-lg text-white/90">
               Hot deals, fresh summer essentials, and smart picks curated for you.
