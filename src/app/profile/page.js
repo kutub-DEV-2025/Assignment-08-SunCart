@@ -11,12 +11,12 @@ export default function ProfilePage() {
     photoUrl: "https://i.ibb.co/8dN7K8D/user.png",
   });
 
-  // form temp state
+
   const [formData, setFormData] = useState(user);
 
   const handleUpdate = () => {
-    setUser(formData);     // update main user
-    setShowForm(false);    // close form
+    setUser(formData);     
+    setShowForm(false);    
   };
 
   return (
@@ -26,20 +26,18 @@ export default function ProfilePage() {
 
         <h1 className="text-2xl font-bold mb-6">My Profile</h1>
 
-        {/* Profile Image */}
+    
         <img
           src={user.photoUrl}
           alt={user.name}
           className="w-28 h-28 rounded-full mx-auto object-cover border-4 border-orange-400"
         />
 
-        {/* Info */}
         <div className="mt-5 space-y-2">
           <p><span className="font-semibold">Name:</span> {user.name}</p>
           <p><span className="font-semibold">Email:</span> {user.email}</p>
         </div>
 
-        {/* Update Button */}
         <button
           onClick={() => setShowForm(true)}
           className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg w-full transition"
@@ -47,7 +45,6 @@ export default function ProfilePage() {
           Update Profile
         </button>
 
-        {/* ================= FORM ================= */}
         {showForm && (
           <div className="mt-6 text-left border-t pt-4">
 
@@ -55,7 +52,7 @@ export default function ProfilePage() {
               Update Information
             </h2>
 
-            {/* Name */}
+            
             <input
               type="text"
               value={formData.name}
@@ -66,7 +63,7 @@ export default function ProfilePage() {
               placeholder="Name"
             />
 
-            {/* Email */}
+            
             <input
               type="email"
               value={formData.email}
@@ -77,7 +74,7 @@ export default function ProfilePage() {
               placeholder="Email"
             />
 
-            {/* Photo URL */}
+            
             <input
               type="text"
               value={formData.photoUrl}
