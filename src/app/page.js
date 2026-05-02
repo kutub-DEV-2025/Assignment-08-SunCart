@@ -4,7 +4,7 @@ import ProductCard from "@/components/ProductCard";
 export default function Home() {
   return (
     <div>
-      {/* Hero Section */}
+      
       <section className="bg-orange-100 rounded-xl p-10 text-center mt-6">
         <h1 className="text-4xl font-bold text-orange-600">
           Summer Sale 50% OFF
@@ -12,7 +12,6 @@ export default function Home() {
         <p className="mt-3 text-lg">Hot Deals 🔥</p>
       </section>
 
-      {/* Popular Products */}
       <section className="mt-10">
         <h2 className="text-2xl font-bold mb-6">Popular Products</h2>
 
@@ -23,7 +22,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Summer Care Tips */}
+    
       <section className="mt-12">
         <h2 className="text-2xl font-bold mb-4">Summer Care Tips</h2>
 
@@ -51,7 +50,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Top Brands */}
+    
       <section className="mt-12 mb-10">
         <h2 className="text-2xl font-bold mb-4">Top Brands</h2>
 
