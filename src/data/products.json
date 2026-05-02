@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Beach Hat",
+    "brand": "Sunny",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 8,
+    "description": "Perfect hat for hot summer days.",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518",
+    "category": "Fashion"
+  },
+  {
+    "id": 3,
+    "name": "Sunscreen SPF50",
+    "brand": "Care",
+    "price": 20,
+    "rating": 4.8,
+    "stock": 15,
+    "description": "Protects your skin from harmful UV rays.",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+    "category": "Skincare"
+  },
+  {
+    "id": 4,
+    "name": "Beach Bag",
+    "brand": "SummerGo",
+    "price": 22,
+    "rating": 4.4,
+    "stock": 9,
+    "description": "Carry all your beach essentials.",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Summer T-Shirt",
+    "brand": "CoolWear",
+    "price": 18,
+    "rating": 4.6,
+    "stock": 12,
+    "description": "Lightweight cotton summer t-shirt.",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    "category": "Clothing"
+  },
+  {
+    "id": 6,
+    "name": "Flip Flops",
+    "brand": "BeachWalk",
+    "price": 10,
+    "rating": 4.2,
+    "stock": 20,
+    "description": "Comfortable flip flops for the beach.",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    "category": "Footwear"
+  }
+]
