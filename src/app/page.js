@@ -1,15 +1,20 @@
 import products from "@/data/products.json";
 import ProductCard from "@/components/ProductCard";
+import "animate.css";
 
 export default function Home() {
   return (
     <div>
       
       <section className="bg-orange-100 rounded-xl p-10 text-center mt-6">
+        <div className="animate__animated animate__pulse animate__infinite">
+  
+
         <h1 className="text-4xl font-bold text-orange-600">
           Summer Sale 50% OFF
         </h1>
         <p className="mt-3 text-lg">Hot Deals 🔥</p>
+        </div>
       </section>
 
       <section className="mt-10">
