@@ -32,21 +32,21 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Summer Care Tips</h2>
 
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="p-4 border rounded shadow-sm">
-            <h3 className="font-semibold">Stay Hydrated</h3>
+          <div className="p-4 border rounded shadow-sm bg-orange-100">
+            <h3 className="font-semibold ">Stay Hydrated</h3>
             <p className="text-sm mt-2">
               Drink enough water to stay fresh during hot summer days.
             </p>
           </div>
 
-          <div className="p-4 border rounded shadow-sm">
+          <div className="p-4 border rounded shadow-sm bg-orange-100">
             <h3 className="font-semibold">Use Sunscreen</h3>
             <p className="text-sm mt-2">
               Protect your skin from UV rays with SPF sunscreen.
             </p>
           </div>
 
-          <div className="p-4 border rounded shadow-sm">
+          <div className="p-4 border rounded shadow-sm bg-orange-100">
             <h3 className="font-semibold">Wear Light Clothes</h3>
             <p className="text-sm mt-2">
               Cotton and breathable clothes help reduce heat.
@@ -60,19 +60,19 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Top Brands</h2>
 
         <div className="grid md:grid-cols-4 gap-4">
-          <div className="border rounded p-6 text-center shadow-sm">
+          <div className="border rounded p-6 text-center shadow-sm bg-orange-500 text-white">
             SunShade
           </div>
 
-          <div className="border rounded p-6 text-center shadow-sm">
+          <div className="border rounded p-6 text-center shadow-sm bg-orange-500 text-white">
             BeachWalk
           </div>
 
-          <div className="border rounded p-6 text-center shadow-sm">
+          <div className="border rounded p-6 text-center shadow-sm bg-orange-500 text-white">
             CoolWear
           </div>
 
-          <div className="border rounded p-6 text-center shadow-sm">
+          <div className="border rounded p-6 text-center shadow-sm bg-orange-500 text-white">
             SummerGo
           </div>
         </div>
