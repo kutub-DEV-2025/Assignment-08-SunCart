@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function LoginForm() {
   const searchParams = useSearchParams();
   const redirectTo = searchParams.get("redirect") || "/";
 
@@ -13,7 +13,6 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  
   const handleLogin = async () => {
     setError("");
 
@@ -28,12 +27,11 @@ export default function LoginPage() {
     }
   };
 
-  
   const handleGoogleLogin = async () => {
     try {
       await authClient.signIn.social({
         provider: "google",
-        callbackURL: "/",
+        callbackURL: redirectTo,
       });
     } catch (err) {
       setError("Google login failed");
@@ -41,53 +39,45 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 mt-10 border rounded shadow">
-
-      
+    <div className="max-w-md mx-auto p-6 mt-10 border rounded-xl shadow bg-white">
       <h1 className="text-2xl font-bold mb-5 text-center">
         Login
       </h1>
 
-      
       {error && (
         <p className="bg-red-100 text-red-600 p-2 mb-3 rounded">
           {error}
         </p>
       )}
 
-     
       <input
         type="email"
         placeholder="Email"
-        className="border p-2 w-full mb-3"
+        className="border p-2 w-full mb-3 rounded"
         onChange={(e) => setEmail(e.target.value)}
       />
 
-     
       <input
         type="password"
         placeholder="Password"
-        className="border p-2 w-full mb-3"
+        className="border p-2 w-full mb-3 rounded"
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      
       <button
         onClick={handleLogin}
-        className="bg-orange-500 text-white w-full py-2 rounded mb-3"
+        className="bg-orange-500 hover:bg-orange-600 text-white w-full py-2 rounded mb-3 transition"
       >
         Login
       </button>
 
-      
       <button
         onClick={handleGoogleLogin}
-        className="bg-blue-500 text-white w-full py-2 rounded mb-4"
+        className="bg-blue-500 hover:bg-blue-600 text-white w-full py-2 rounded mb-4 transition"
       >
         Continue with Google
       </button>
 
-      
       <p className="text-center text-sm">
         Don’t have an account?{" "}
         <Link href="/register" className="text-orange-500">
